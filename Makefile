@@ -1,0 +1,10 @@
+PROGNAME=cbt
+SRCDIR=src
+
+.PHONY = all
+
+all :
+	$(MAKE) PROGNAME=$(PROGNAME) -C $(SRCDIR) $@	
+	
+% :
+	$(MAKE) PROGNAME=$(PROGNAME) -C $(SRCDIR) $@	
